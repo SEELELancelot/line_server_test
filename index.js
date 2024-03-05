@@ -13,7 +13,7 @@ app.post('/webhook', line.middleware(config), (req, res) => {
         .then((result) => res.json(result));
 });
 
-app.get("test",(req, res)=>{
+app.get("/test",(req, res)=>{
     res.end("test");
 })
 

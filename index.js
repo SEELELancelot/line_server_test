@@ -13,6 +13,10 @@ app.post('/webhook', line.middleware(config), (req, res) => {
         .then((result) => res.json(result));
 });
 
+app.get("test",(req, res)=>{
+    res.end("test");
+})
+
 const client = new line.messagingApi.MessagingApiClient({
     channelAccessToken: 'RdFcsMBl+Anxfn8q/y1BCXpgnr5w4s9arTGLjZICFwKY4l0EMSJiMdUiSbfWq9v3O7Tc5mM6BMLpWZszUYgfJ+xCkA9mqiHfcZ4gtffrrBq95aU+vY1KoSjuO2ENghYlDDkA+ceO7oe56FQeuQ3jwAdB04t89/1O/w1cDnyilFU=',
 });

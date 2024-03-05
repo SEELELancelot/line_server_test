@@ -29,7 +29,7 @@ function handleEvent(event) {
         replyToken: event.replyToken,
         messages: [{
             type: 'text',
-            text: event.message.text
+             text: event.message.text
         }],
     });
 }
